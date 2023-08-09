@@ -1,10 +1,19 @@
+//completing game
 
 import React, { Component }  from 'react';
 
-function Square({ value }) {
+
+import { useState } from 'react';
+
+function Square() {
+  const [value, setValue] = useState(null);
+
+
   function handleClick() {
-    console.log('clicked!');
+    setValue('X'); 
   }
+  
+
 
   return (
     <button
@@ -19,24 +28,21 @@ function Square({ value }) {
 export default function Board() {
   return (
     <div>
-
-
-<div className="board-row">
-        <Square value="1" />
-        <Square value="2" />
-        <Square value="3" />
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
       </div>
       <div className="board-row">
-        <Square value="4" />
-        <Square value="5" />
-        <Square value="6" />
+        <Square />
+        <Square />
+        <Square />
       </div>
       <div className="board-row">
-        <Square value="7" />
-        <Square value="8" />
-        <Square value="9" />
+        <Square  />
+        <Square />
+        <Square />
       </div>
-
     </div>
   );
 }
