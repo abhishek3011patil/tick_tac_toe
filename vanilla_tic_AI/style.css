@@ -48,3 +48,10 @@ table tr td:last-child {
   color: white;
   font-size: 2em;
 }
+
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
